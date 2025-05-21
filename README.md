@@ -21,6 +21,10 @@ See these links:
 https://github.com/Netflix/Hystrix/issues/1874
 https://github.com/Netflix/Hystrix/pull/1877/files
 
+Note that only hystrix-core is of interest here. The rest of the modules may not even build since their dependencies
+are very old and the versio of gradle used to build them is very old. This gradle file has been just barely re-written
+to build hystrix-core and nothing else.
+
 ## Full Documentation
 
 See the [Wiki](https://github.com/Netflix/Hystrix/wiki/) for full documentation, examples, operational details and other information.
