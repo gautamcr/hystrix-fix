@@ -18,6 +18,7 @@ The maxSize is defaulted to 10 in 1.5.18 and setting the coreSize to any value h
 This fix addresses that. It sets the sizes in the right order so this error is not thrown.
 
 See these links:
+
 https://github.com/Netflix/Hystrix/issues/1874
 
 https://github.com/Netflix/Hystrix/pull/1877/files
