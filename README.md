@@ -19,6 +19,7 @@ This fix addresses that. It sets the sizes in the right order so this error is n
 
 See these links:
 https://github.com/Netflix/Hystrix/issues/1874
+
 https://github.com/Netflix/Hystrix/pull/1877/files
 
 Note that only hystrix-core is of interest here. The rest of the modules may not even build since their dependencies
