@@ -9,6 +9,18 @@
 
 Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.
 
+## About this repo
+This repo is solely to fix one small issue with how the coreSize and maximumSize have a dependency on each other
+and because the 1.5.18 version of this library errors out when run under JDK 11 and higher.
+
+The maxSize is defaulted to 10 in 1.5.18 and setting the coreSize to any value higher than that fails in JDK 11 and over.
+
+This fix addresses that. It sets the sizes in the right order so this error is not thrown.
+
+See these links:
+https://github.com/Netflix/Hystrix/issues/1874
+https://github.com/Netflix/Hystrix/pull/1877/files
+
 ## Full Documentation
 
 See the [Wiki](https://github.com/Netflix/Hystrix/wiki/) for full documentation, examples, operational details and other information.
