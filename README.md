@@ -25,6 +25,12 @@ Note that only hystrix-core is of interest here. The rest of the modules may not
 are very old and the versio of gradle used to build them is very old. This gradle file has been just barely re-written
 to build hystrix-core and nothing else.
 
+Use this command to build only hystrix-core:
+
+./gradlew :hystrix-core:jar
+
+If all goes well you should find the built jar under hystrix-core/build/libs.
+
 ## Full Documentation
 
 See the [Wiki](https://github.com/Netflix/Hystrix/wiki/) for full documentation, examples, operational details and other information.
